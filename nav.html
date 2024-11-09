@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Навигация</title>
+</head>
+
+
+<body>
+	<div class="wrapper">
+
+		<main class="content">
+			<div class="navigation">
+				<div class="container">
+					<ul class="navigation__list">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="registration.html">Вход</a></li>
+					</ul>
+					<button class="open-modal__btn btn btn-vinous" data-modal="contactModal2">
+						<span>Параметры</span>
+					</button>
+					<button class="open-modal__btn btn btn-vinous" data-modal="contactModal3">
+						<span>Добавление нового ИП</span>
+					</button>
+				</div>
+			</div>
+		</main>
+
+	</div>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+<div class="modal" id="contactModal2">
+	<div class="modal__dialog parameters-modal">
+		<div class="modal__content">
+			<div class="modal__title">Параметры</div>
+			<div class="parameters-modal__top">
+				<span>Отлично</span>
+				<span>Хорошо</span>
+				<span>Удовл-но</span>
+				<span>К удалению</span>
+			</div>
+			<div class="parameters-modal__items">
+				<div class="parameters-modal__item">
+					<div class="parameters-modal__item-text">Отлично/Отображение параметров: от 11</div>
+					<div class="parameters-modal__item-number">0</div>
+				</div>
+				<div class="parameters-modal__item">
+					<div class="parameters-modal__item-text">Отлично/Отображение параметров: от 6 до 10</div>
+					<div class="parameters-modal__item-number">10</div>
+				</div>
+				<div class="parameters-modal__item">
+					<div class="parameters-modal__item-text">Отлично/Отображение параметров: от 1 до 5</div>
+					<div class="parameters-modal__item-number">5</div>
+				</div>
+				<div class="parameters-modal__item">
+					<div class="parameters-modal__item-text">0</div>
+					<div class="parameters-modal__item-number">0</div>
+				</div>
+				<div class="parameters-modal__item">
+					<div class="parameters-modal__item-text">Период в днях</div>
+					<div class="parameters-modal__item-number">5</div>
+				</div>
+				<div class="parameters-modal__item">
+					<div class="parameters-modal__item-text">Период в днях</div>
+					<div class="parameters-modal__item-number">5</div>
+				</div>
+				<div class="parameters-modal__item">
+					<div class="parameters-modal__item-text">Период в днях</div>
+					<div class="parameters-modal__item-number">5</div>
+				</div>
+				<div class="parameters-modal__item">
+					<div class="parameters-modal__item-text">Период в днях</div>
+					<div class="parameters-modal__item-number">91</div>
+				</div>
+			</div>
+			<button class="parameters-modal__btn _close-modal btn btn-vinous" data-bs-dismiss="modal" aria-label="Close">
+				<span>Сохранить</span>
+			</button>
+		</div>
+	</div>
+</div>
+<div class="modal" id="contactModal3">
+	<div class="modal__dialog form-modal">
+		<div class="modal__content">
+			<div class="modal__title">Добавление нового ИП</div>
+			<div class="form-modal__subtitle">Заполните данные, чтобы <br> добавить предпринимателя</div>
+			<form class="form-modal__form form">
+				<div class="form-modal__form-group form-group">
+					<input type="text" placeholder="API-ключ">
+				</div>
+				<div class="form-modal__form-group form-group">
+					<input type="text" placeholder="Наименование ИП">
+				</div>
+				<div class="form-modal__form-group form-group">
+					<input type="text" placeholder="Наименование магазина">
+				</div>
+				<button class="form-modal__form-btn form-btn btn btn-vinous">
+					<span>Добавить</span>
+				</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+</html>
+
+<style>
+	.navigation {
+		padding: 50px 0;
+	}
+	.navigation__list {
+		display: grid;
+		grid-template-columns: 100%;
+		gap: 24px;
+	}
+	.navigation__list li a {
+		font-size: 18px;
+		line-height: 120%;
+	}
+	.navigation__list li a:hover {
+		color: #8A005C;
+	}
+	.open-modal__btn {
+		padding: 15px 45px;
+		margin-top: 24px;
+	}
+	.open-modal__btn span {
+		font-size: 18px;
+	}
+	.ope
+</style>
